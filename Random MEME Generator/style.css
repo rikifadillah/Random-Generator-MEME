@@ -1,0 +1,136 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #f5f8fa; /* Latar belakang yang lebih cerah */
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: calc(1rem + min(30px, 50vw));
+  font-weight: 1000;
+  letter-spacing: 0.5rem;
+  line-height: 0.9;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 5px #218838;
+  
+  
+}
+
+.meme-generator {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px; /* Sudut yang lebih halus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.meme-generator img {
+  max-width: 500px; /* Atur lebar maksimum gambar */
+  max-height: 400px; /* Atur tinggi maksimum gambar */
+  width: auto; /* Agar lebar gambar menyesuaikan */
+  height: auto; /* Agar tinggi gambar menyesuaikan */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.generate-meme-btn, .download-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-meme-btn {
+  background-color: #007bff; /* Warna tombol generate */
+  color: white;
+}
+
+.generate-meme-btn:hover {
+  background-color: #0056b3;
+}
+
+.download-btn {
+  background-color: #28a745; /* Warna tombol download */
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+.comments-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#comment-input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f5f8fa; /* Latar belakang input yang lebih cerah */
+}
+
+#submit-comment, #clear-comments {
+  padding: 10px 20px;
+  border-radius: 20px; /* Tombol dengan sudut yang lebih halus */
+  border: none; /* Menghapus batas tombol */
+  color: white; /* Teks tombol berwarna putih */
+  margin-top: 10px; /* Memberikan jarak antara tombol dan komentar */
+}
+
+#submit-comment {
+  background-color: #1da1f2; /* Warna biru khas Twitter */
+}
+
+#submit-comment:hover {
+  background-color: #0a85d1; /* Warna lebih gelap saat hover */
+}
+
+#clear-comments {
+  background-color: #dc3545; /* Merah untuk tombol hapus */
+}
+
+#clear-comments:hover {
+  background-color: #c82333; /* Warna lebih gelap saat hover */
+}
+
+.comments-list {
+  margin-top: 10px;
+  padding: 0; /* Menghapus padding untuk daftar komentar */
+  list-style-type: none; /* Menghapus bullet point dari daftar */
+}
+
+.comment {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Sudut lebih halus */
+  background-color: #ffffff; /* Latar belakang putih untuk komentar */
+  border: 1px solid #e1e8ed; /* Garis batas untuk komentar */
+  transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.comment:hover {
+  background-color: #f1f8ff; /* Warna latar belakang saat hover */
+}
+
+.comment-author {
+  font-weight: bold; /* Nama penulis tebal */
+  color: #1da1f2; /* Warna biru untuk nama penulis */
+}
+
+.comment-text {
+  margin-top: 5px; /* Memberikan sedikit jarak antara nama dan isi komentar */
+}

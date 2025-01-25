@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random MEME Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="meme-generator">
+        <h3 class="title">RANDOM MEME GENERATOR</h3>
+        <div class="button-container">
+            <button class="generate-meme-btn">Generate Meme</button>
+            <a id="download-link" class="download-btn" style="display: none;">Download Meme</a>
+        </div>
+        <h2 class="meme-title">Loading...</h2>
+        <img src="" alt="" />
+        <div class="meme-author"></div>
+        
+        <div class="comments-section">
+            <textarea id="comment-input" placeholder="Tulis komentar..."></textarea>
+            <div class="comment-buttons">
+                <button id="submit-comment">Kirim</button>
+                <button id="clear-comments">Hapus Semua</button>
+            </div>
+            <ul class="comments-list"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
